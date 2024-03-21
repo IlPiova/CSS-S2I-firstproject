@@ -1,0 +1,94 @@
+@import "_config.scss";
+@import "_media.scss";
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    padding: 0;
+    width: auto;
+    padding: 1.5em;
+    text-transform: uppercase;
+
+    &__elementi {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        list-style: none;
+
+        &__item {
+            & a {
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                    text-decoration-color: $secondary-color;
+                    text-decoration-thickness: 2px;
+                }
+
+                &:active {
+                    text-decoration: underline;
+                    text-decoration-color: $secondary-color;
+                    text-decoration-thickness: 2px;
+                }
+            }
+        }
+
+        &__contact {
+
+            & a {
+                text-decoration: none;
+
+                &:hover {
+                    background-color: $secondary-color;
+                    color: $bg-color;
+                    padding: 3px;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}
+
+.presentazione {
+    height: 100px;
+    background-color: antiquewhite;
+}
+
+// fine presentazione
+
+.presentazione {
+    height: 100px;
+    background-color: antiquewhite;
+}
+
+//fine foto
+
+.esperienze {
+    height: 100px;
+    width: 100%;
+    background-color: red;
+}
+
+.skills {
+    height: 100px;
+    background-color: blue;
+}
+
+.tools {
+    height: 100px;
+    background-color: orange;
+}
+
+.contact_me {
+    height: 100px;
+    background-color: violet;
+}
+
+.footer {
+    height: 100px;
+    background-color: green;
+}

@@ -1,0 +1,67 @@
+// variabili
+$bg-color: #191815;
+$text-color: #d4d4d4;
+$secondary-color: #60bf4e;
+
+//caratteri
+
+// bisogna reinserire i font
+@font-face {
+    font-family: "Poppins Black";
+    src: url('/file multimediali/caratteri/Poppins-Black.ttf') format('ttf');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url('/file multimediali/caratteri/Poppins-Regular.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins Italic';
+    src: url('/file multimediali/caratteri/Poppins-LightItalic.ttf') format('ttf');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Poppins SemiBold';
+    src: url('/file multimediali/caratteri/Poppins-SemiBold.ttf') format('ttf');
+    font-weight: 600;
+    font-weight: bold;
+
+}
+
+//
+
+* {
+    margin: 0px;
+    padding: 0px;
+    background-color: $bg-color;
+    color: $text-color;
+    font-family: "poppins";
+    font-size: calc(0.8vw + 6px);
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-auto-flow: column;
+    place-content: space-around;
+    grid-template-columns: 1fr;
+    grid-template-areas: "nav"
+        "ft"
+        "pr"
+        "es"
+        "sk"
+        "to"
+        "cm"
+        "fo";
+
+    gap: 1.5em;
+    line-height: 1.5em;
+    padding: 0 1.5em;
+}

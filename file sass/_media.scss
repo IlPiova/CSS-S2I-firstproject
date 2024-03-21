@@ -1,0 +1,31 @@
+@import "_config.scss";
+
+// tablet 641 - 1007 px
+// pc 1008 px e su
+
+@media only screen and (min-width: 641px) and (max-width: 1080px) {
+    body {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "nav" "nav" "nav"
+            "ft" "pr" "pr"
+            "es" "es" "es"
+            "sk" "sk" "sk"
+            "to" "to" "to"
+            "cm" "cm" "cm"
+            "fo" "fo" "fo";
+    }
+}
+
+@media only screen and (min-width: 1081px) {
+    body {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-areas: "nav" "nav" "nav"
+            "pr" "pr" "pr" "ft" "ft"
+            "es" "es" "sk" "sk" "sk"
+            "to" "to" "to"
+            "cm" "cm" "cm"
+            "fo" "fo" "fo";
+    }
+}
