@@ -3,7 +3,7 @@
 // tablet 641 - 1007 px
 // pc 1008 px e su
 
-@media only screen and (min-width: 641px) and (max-width: 1080px) {
+@media only screen and (min-width: 481px) and (max-width: 720px) {
     body {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -17,7 +17,22 @@
     }
 }
 
-@media only screen and (min-width: 1081px) {
+@media only screen and (min-width: 721px) {
+    .navbar {
+        &__label {
+            display: none;
+        }
+
+        &__elementi {
+            justify-content: flex-end;
+            flex-direction: row;
+
+            &__item {
+                display: block;
+            }
+        }
+    }
+
     body {
         display: grid;
         grid-template-columns: repeat(5, 1fr);

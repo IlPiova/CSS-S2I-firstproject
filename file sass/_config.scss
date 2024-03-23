@@ -43,25 +43,58 @@ $secondary-color: #60bf4e;
     color: $text-color;
     font-family: "poppins";
     font-size: calc(0.8vw + 6px);
+    line-height: 1.5em;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    background-color: $bg-color;
+    color: $text-color;
+    font-family: "poppins";
+    font-size: calc(0.8vw + 6px);
+    line-height: 1.5em;
     scroll-behavior: smooth;
     box-sizing: border-box;
 }
 
 body {
     display: grid;
+    // align-items: center;
     grid-auto-flow: column;
-    place-content: space-around;
-    grid-template-columns: 1fr;
-    grid-template-areas: "nav"
-        "ft"
-        "pr"
-        "es"
-        "sk"
-        "to"
-        "cm"
-        "fo";
+    grid-template-columns: auto;
+    grid-template-areas: 'nav'
+        'ft'
+        'pr'
+        'es'
+        'sk'
+        'to'
+        'cm'
+        'fo';
 
     gap: 1.5em;
-    line-height: 1.5em;
     padding: 0 1.5em;
+    // width: fit-content;
+}
+
+h1 {
+    font-size: calc(6vw + 6px);
+    font-family: "poppins";
+    font-weight: 900;
+    line-height: 1.5em;
+}
+
+h2 {
+    font-size: calc(4vw + 6px);
+    font-family: "poppins";
+    font-weight: 600;
+    line-height: 1em;
+}
+
+.txt-colorato {
+    font-size: inherit;
+    font-weight: inherit;
+    color: $secondary-color;
 }

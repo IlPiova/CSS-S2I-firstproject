@@ -1,25 +1,62 @@
 @import "_config.scss";
-@import "_media.scss";
+
 
 
 .navbar {
-    position: fixed;
+    grid-area: nav;
+    // width: 100%;
+    position: sticky;
     top: 0;
-    right: 0;
-    z-index: 1;
-    padding: 0;
-    width: auto;
-    padding: 1.5em;
-    text-transform: uppercase;
+
+    // right: 0;
+    // z-index: 1;
+    // padding: 0;
+    // width: auto;
+    // padding: 1.5em;
+    &__button {
+        display: none;
+    }
+
+    &__label {
+        position: absolute;
+        cursor: pointer;
+        margin: 0rem 1rem;
+        right: 0;
+
+        svg {
+            width: 1.5rem;
+            fill: $text-color;
+        }
+
+        &__close {
+            display: none;
+        }
+
+        &__menu {
+            margin-top: 0.2rem;
+        }
+    }
+
+
 
     &__elementi {
+        width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
         align-items: flex-end;
-        list-style: none;
+        gap: 2rem;
+        margin: 1rem;
 
         &__item {
+            list-style: none;
+            text-transform: uppercase;
+            display: none;
+
+            &:first-child {
+                margin-right: auto;
+                display: block;
+            }
+
             & a {
                 text-decoration: none;
 
@@ -53,42 +90,117 @@
     }
 }
 
+#navbar__button:checked~.navbar__elementi .navbar__elementi__item {
+    display: block;
+}
+
+#navbar__button:checked~.navbar__label .navbar__label__menu {
+    display: none;
+}
+
+#navbar__button:checked~.navbar__label .navbar__label__close {
+    display: block;
+}
+
+
 .presentazione {
+    grid-area: pr;
     height: 100px;
     background-color: antiquewhite;
+
+    h2 {
+        color: darken($text-color, 25);
+        font-size: calc(2vw + 6px);
+    }
 }
 
 // fine presentazione
 
-.presentazione {
-    height: 100px;
-    background-color: antiquewhite;
+.foto {
+    grid-area: ft;
+
+    // width: auto;
+    // background-color: chocolate;
+    // border: 2px solid red;
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 //fine foto
 
 .esperienze {
+    grid-area: es;
     height: 100px;
     width: 100%;
     background-color: red;
 }
 
 .skills {
+    grid-area: sk;
     height: 100px;
     background-color: blue;
 }
 
 .tools {
+    grid-area: to;
     height: 100px;
     background-color: orange;
 }
 
 .contact_me {
+    grid-area: cm;
     height: 100px;
     background-color: violet;
 }
 
 .footer {
+    grid-area: fo;
     height: 100px;
     background-color: green;
+}
+
+//media queries
+
+@media only screen and (min-width: 481px) and (max-width: 720px) {
+    body {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 'nav nav nav'
+            'pr pr ft'
+            'es es es'
+            'sk sk sk'
+            'to to to'
+            'cm cm cm'
+            'fm fm fm';
+    }
+}
+
+@media only screen and (min-width: 721px) {
+    .navbar {
+        &__label {
+            display: none;
+        }
+
+        &__elementi {
+            flex-direction: row;
+            justify-content: flex-end;
+
+            &__item {
+                display: block;
+            }
+        }
+    }
+
+    body {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-areas: ' nav nav nav nav nav'
+            'pr pr pr ft ft'
+            'es es es sk sk'
+            'to to to to to'
+            'cm cm cm cm cm'
+            'fm fm fm fm fm';
+    }
 }
