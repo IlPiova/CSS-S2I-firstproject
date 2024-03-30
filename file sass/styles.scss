@@ -4,15 +4,10 @@
 
 .navbar {
     grid-area: nav;
-    // width: 100%;
     position: sticky;
     top: 0;
+    width: 100%;
 
-    // right: 0;
-    // z-index: 1;
-    // padding: 0;
-    // width: auto;
-    // padding: 1.5em;
     &__button {
         display: none;
     }
@@ -47,15 +42,19 @@
         gap: 2rem;
         margin: 1rem;
 
+        .logo {
+            margin-right: auto;
+            display: block;
+        }
+
+        .contact-me__button {
+            padding: .1em .3em;
+        }
+
         &__item {
             list-style: none;
             text-transform: uppercase;
             display: none;
-
-            &:first-child {
-                margin-right: auto;
-                display: block;
-            }
 
             & a {
                 text-decoration: none;
@@ -74,19 +73,6 @@
             }
         }
 
-        &__contact {
-
-            & a {
-                text-decoration: none;
-
-                &:hover {
-                    background-color: $secondary-color;
-                    color: $bg-color;
-                    padding: 3px;
-                    border-radius: 10px;
-                }
-            }
-        }
     }
 }
 
@@ -105,11 +91,12 @@
 
 .presentazione {
     grid-area: pr;
-    height: 100px;
-    background-color: antiquewhite;
+    // background-color: antiquewhite;
 
     h2 {
         color: darken($text-color, 25);
+        font-family: "poppins";
+        font-weight: 900;
         font-size: calc(2vw + 6px);
     }
 }
@@ -119,9 +106,6 @@
 .foto {
     grid-area: ft;
 
-    // width: auto;
-    // background-color: chocolate;
-    // border: 2px solid red;
     img {
         max-width: 100%;
         height: auto;
@@ -130,36 +114,141 @@
 
 //fine foto
 
+
 .esperienze {
     grid-area: es;
-    height: 100px;
-    width: 100%;
-    background-color: red;
+
+    &__elementi {
+        display: grid;
+        grid-auto-flow: rows;
+        gap: 3em;
+
+
+        &__item {
+            display: grid;
+            grid-auto-flow: column;
+            gap: 1em;
+            grid-template-areas: 'm di'
+                'a df';
+            border: 2px solid $secondary-color;
+            border-radius: 3px;
+            align-items: center;
+            box-shadow: 0px 0px 5px 2px darken($secondary-color, 35);
+            padding: 0.8em;
+
+            &__mansione {
+                grid-area: m;
+                width: 45%;
+            }
+
+            &__text-sec {
+                grid-area: a;
+                width: 45%;
+            }
+
+            &__dataIn {
+                grid-area: di;
+                justify-self: flex-end;
+            }
+
+            &__dataFin {
+                grid-area: df;
+                justify-self: flex-end;
+            }
+
+        }
+
+    }
 }
+
+
 
 .skills {
     grid-area: sk;
-    height: 100px;
-    background-color: blue;
+
+    &__elementi {
+
+        &__item {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 1em;
+            margin-bottom: 3em;
+        }
+    }
 }
 
 .tools {
     grid-area: to;
-    height: 100px;
-    background-color: orange;
+
+    &__elementi {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-rows: 1fr 1fr;
+        justify-content: space-around;
+        gap: 1em;
+
+        &__item {
+            text-align: center;
+
+            p {
+                margin-bottom: 0.5em;
+            }
+
+            .barra {
+                margin-top: 1em;
+                border-radius: .3em;
+            }
+
+            .progressi {
+                height: .8em;
+                border-radius: .3em;
+            }
+        }
+    }
 }
 
-.contact_me {
+.contact-me {
     grid-area: cm;
-    height: 100px;
-    background-color: violet;
+    margin: auto;
+    text-align: center;
+
+    h2 {
+        font-size: calc(8vw + 6px);
+        font-family: "poppins";
+        font-weight: 900;
+    }
+
+    &__elementi {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+
+        .contact-me__mail {
+            background-color: $bg-color;
+            color: $secondary-color;
+            font-family: 'poppins';
+            font-weight: 600;
+            padding: 0.5em;
+            border: $secondary-color;
+            border-radius: .5em;
+            box-shadow: 0px 0px 5px 2px darken($secondary-color, 25);
+
+            a {
+                text-decoration: none;
+                background-color: inherit;
+                color: inherit;
+            }
+        }
+    }
 }
 
 .footer {
     grid-area: fo;
-    height: 100px;
-    background-color: green;
+
 }
+
+
 
 //media queries
 
@@ -173,9 +262,63 @@
             'sk sk sk'
             'to to to'
             'cm cm cm'
-            'fm fm fm';
+            'fo fo fo';
+    }
+
+    .esperienze {
+
+
+        &__elementi {
+            display: grid;
+            grid-auto-flow: column;
+            grid-template-rows: repeat(2, 1fr);
+            gap: 3em;
+
+            &__item {
+
+                padding: 0.8em;
+            }
+        }
+    }
+
+    .tools {
+        grid-area: to;
+
+        &__elementi {
+            display: grid;
+            grid-auto-flow: column;
+            grid-template-rows: none;
+            justify-content: space-between;
+            gap: 1em;
+
+            &__item {
+                text-align: center;
+
+                .barra {
+                    margin-top: 1em;
+                    border-radius: .3em;
+                }
+
+                .progressi {
+                    height: .8em;
+                    border-radius: .3em;
+                }
+            }
+        }
+    }
+
+    .contact-me {
+        text-align: center;
+
+        &__elementi {
+
+            flex-direction: row;
+
+        }
     }
 }
+
+
 
 @media only screen and (min-width: 721px) {
     .navbar {
@@ -201,6 +344,42 @@
             'es es es sk sk'
             'to to to to to'
             'cm cm cm cm cm'
-            'fm fm fm fm fm';
+            'fo fo fo fo fo';
+    }
+
+    .tools {
+        grid-area: to;
+
+        &__elementi {
+            display: grid;
+            grid-auto-flow: column;
+            grid-template-rows: none;
+            justify-content: space-between;
+            gap: 1em;
+
+            &__item {
+                text-align: center;
+
+                .barra {
+                    margin-top: 1em;
+                    border-radius: .3em;
+                }
+
+                .progressi {
+                    height: .8em;
+                    border-radius: .3em;
+                }
+            }
+        }
+    }
+
+    .contact-me {
+        text-align: center;
+
+        &__elementi {
+
+            flex-direction: row;
+
+        }
     }
 }
