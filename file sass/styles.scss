@@ -217,11 +217,13 @@
         font-size: calc(8vw + 6px);
         font-family: "poppins";
         font-weight: 900;
+        text-align: center;
     }
 
     &__elementi {
         display: flex;
         flex-direction: column;
+        justify-content: space-evenly;
         gap: 2em;
 
         .contact-me__mail {
@@ -245,7 +247,7 @@
 
 .footer {
     grid-area: fo;
-
+    background-color: red;
 }
 
 
@@ -311,7 +313,7 @@
         text-align: center;
 
         &__elementi {
-
+            justify-content: space-around;
             flex-direction: row;
 
         }
@@ -348,7 +350,6 @@
     }
 
     .tools {
-        grid-area: to;
 
         &__elementi {
             display: grid;
@@ -379,7 +380,7 @@
         &__elementi {
 
             flex-direction: row;
-
+            justify-content: space-around;
         }
     }
 }

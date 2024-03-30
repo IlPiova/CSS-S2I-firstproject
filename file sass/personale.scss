@@ -1,0 +1,64 @@
+// @import "_config.scss";
+// @import "styles.scss";
+
+body {
+    background-color: aquamarine;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-areas: 'nav'
+        'ft'
+        'pr'
+        'is'
+        'li'
+        'ho'
+        'cm'
+        'fo';
+
+    gap: 1.5em;
+    padding: 0 1.5em;
+}
+
+.istruzione {
+    grid-area: is;
+}
+
+.lingue {
+    grid-area: li;
+}
+
+.hobbies {
+    grid-area: ho;
+
+    &__elementi {
+        display: grid;
+        grid-auto-flow: column;
+    }
+
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 720px) {
+    body {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 'nav nav nav'
+            'pr pr ft'
+            'is is li'
+            'ho ho ho'
+            'cm cm cm'
+            'fo fo fo';
+    }
+}
+
+@media only screen and (min-width: 721px) {
+    body {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-areas: ' nav nav nav nav nav'
+            'pr pr pr ft ft'
+            'is is is li li'
+            'ho ho ho ho ho'
+            'cm cm cm cm cm'
+            'fo fo fo fo fo';
+    }
+}
