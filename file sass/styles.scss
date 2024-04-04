@@ -106,6 +106,7 @@
 
 .foto {
     grid-area: ft;
+    height: auto;
 
     img {
         max-width: 100%;
@@ -134,7 +135,8 @@
             border: 2px solid $secondary-color;
             border-radius: 3px;
             align-items: center;
-            box-shadow: 0px 0px 5px 2px darken($secondary-color, 35);
+            // box-shadow: 0px 0px 5px 2px darken($secondary-color, 35);
+            box-shadow: $luminescenza;
             padding: 0.8em;
 
             &__mansione {
@@ -227,21 +229,15 @@
         justify-content: space-evenly;
         gap: 2em;
 
+
+
         .contact-me__mail {
+            @extend %contact-button;
             background-color: $bg-color;
             color: $secondary-color;
-            font-family: 'poppins';
-            font-weight: 600;
-            padding: 0.5em;
             border: $secondary-color;
-            border-radius: .5em;
-            box-shadow: 0px 0px 5px 2px darken($secondary-color, 25);
+            box-shadow: $luminescenza;
 
-            a {
-                text-decoration: none;
-                background-color: inherit;
-                color: inherit;
-            }
         }
     }
 }
