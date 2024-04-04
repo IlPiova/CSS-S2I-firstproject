@@ -188,7 +188,7 @@
         grid-auto-flow: column;
         grid-template-rows: 1fr 1fr;
         justify-content: space-around;
-        gap: 1em;
+        gap: 4em;
 
         &__item {
             text-align: center;
@@ -264,14 +264,9 @@
             & a {
                 text-decoration: none;
                 font-size: 1.2em;
+                text-transform: uppercase;
 
                 &:hover {
-                    text-decoration: underline;
-                    text-decoration-color: $secondary-color;
-                    text-decoration-thickness: 2px;
-                }
-
-                &:active {
                     text-decoration: underline;
                     text-decoration-color: $secondary-color;
                     text-decoration-thickness: 2px;
