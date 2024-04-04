@@ -1,5 +1,6 @@
+@import "_config.scss";
+
 body {
-    // background-color: aquamarine;
     display: grid;
     grid-auto-flow: column;
     grid-template-areas: 'nav'
@@ -14,8 +15,9 @@ body {
     padding: 0 1.5em;
 }
 
-.istruzione {
-    grid-area: is;
+.presentazione p span {
+    color: $secondary-color;
+    font-weight: 600;
 }
 
 .lingue {
