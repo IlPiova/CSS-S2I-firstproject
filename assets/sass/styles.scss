@@ -4,6 +4,8 @@
 
 .navbar {
     grid-area: nav;
+    display: flex;
+    align-items: center;
     position: sticky;
     top: 0;
     width: 100%;
@@ -34,11 +36,11 @@
 
 
 
-    &__elementi {
+    &__elements {
         width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
+        align-items: center;
         gap: 2rem;
         padding: 1em;
 
@@ -76,7 +78,7 @@
     }
 }
 
-#navbar__button:checked~.navbar__elementi .navbar__elementi__item {
+#navbar__button:checked~.navbar__elements .navbar__elements__item {
     display: block;
 }
 
@@ -90,21 +92,21 @@
 
 
 
-.presentazione {
+.about {
     grid-area: pr;
     // background-color: antiquewhite;
 
     h2 {
         color: darken($text-color, 25);
-        font-family: "poppins";
+        font-family: $headers_text;
         font-weight: 900;
         font-size: calc(2vw + 6px);
     }
 }
 
-// fine presentazione
+// fine about
 
-.foto {
+.photo {
     grid-area: ft;
     height: auto;
 
@@ -117,10 +119,10 @@
 //fine foto
 
 
-.esperienze {
+.history {
     grid-area: es;
 
-    &__elementi {
+    &__elements {
         display: grid;
         grid-auto-flow: rows;
         gap: 3em;
@@ -135,10 +137,10 @@
             border: 2px solid $secondary-color;
             border-radius: 3px;
             align-items: center;
-            box-shadow: $luminescenza;
+            box-shadow: $shadow;
             padding: 0.8em;
 
-            &__mansione {
+            &__job {
                 grid-area: m;
                 width: 45%;
             }
@@ -148,12 +150,12 @@
                 width: 45%;
             }
 
-            &__dataIn {
+            &__startDate {
                 grid-area: di;
                 justify-self: flex-end;
             }
 
-            &__dataFin {
+            &__endDate {
                 grid-area: df;
                 justify-self: flex-end;
             }
@@ -168,7 +170,7 @@
 .skills {
     grid-area: sk;
 
-    &__elementi {
+    &__elements {
 
         &__item {
             width: 100%;
@@ -183,7 +185,7 @@
 .tools {
     grid-area: to;
 
-    &__elementi {
+    &__elements {
         display: grid;
         grid-auto-flow: column;
         grid-template-rows: 1fr 1fr;
@@ -197,12 +199,12 @@
                 margin-bottom: 0.5em;
             }
 
-            .barra {
+            .bar {
                 margin-top: 1em;
                 border-radius: .3em;
             }
 
-            .progressi {
+            .progress {
                 height: .8em;
                 border-radius: .3em;
             }
@@ -217,12 +219,12 @@
 
     h2 {
         font-size: calc(8vw + 6px);
-        font-family: "poppins";
+        font-family: $headers_text;
         font-weight: 900;
         text-align: center;
     }
 
-    &__elementi {
+    &__elements {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -235,7 +237,7 @@
             background-color: $bg-color;
             color: $secondary-color;
             border: $secondary-color;
-            box-shadow: $luminescenza;
+            box-shadow: $shadow;
 
         }
     }
@@ -243,10 +245,11 @@
 
 .footer {
     grid-area: fo;
-
+    display: flex;
+    align-items: center;
     margin: 5em 0 2em 0;
 
-    &__elementi {
+    &__elements {
         width: 100%;
         display: flex;
         align-items: center;
@@ -293,10 +296,10 @@
             'fo fo fo';
     }
 
-    .esperienze {
+    .history {
 
 
-        &__elementi {
+        &__elements {
             display: grid;
             grid-auto-flow: column;
             grid-template-rows: repeat(2, 1fr);
@@ -312,7 +315,7 @@
     .tools {
         grid-area: to;
 
-        &__elementi {
+        &__elements {
             display: grid;
             grid-auto-flow: column;
             grid-template-rows: none;
@@ -322,12 +325,12 @@
             &__item {
                 text-align: center;
 
-                .barra {
+                .bar {
                     margin-top: 1em;
                     border-radius: .3em;
                 }
 
-                .progressi {
+                .progress {
                     height: .8em;
                     border-radius: .3em;
                 }
@@ -338,7 +341,7 @@
     .contact-me {
         text-align: center;
 
-        &__elementi {
+        &__elements {
             justify-content: space-around;
             flex-direction: row;
 
@@ -350,13 +353,15 @@
 
 @media only screen and (min-width: 721px) {
     .navbar {
+
         &__label {
             display: none;
         }
 
-        &__elementi {
+        &__elements {
             flex-direction: row;
             justify-content: flex-end;
+            align-items: center;
 
             &__item {
                 display: block;
@@ -377,7 +382,7 @@
 
     .tools {
 
-        &__elementi {
+        &__elements {
             display: grid;
             grid-auto-flow: column;
             grid-template-rows: none;
@@ -387,12 +392,12 @@
             &__item {
                 text-align: center;
 
-                .barra {
+                .bar {
                     margin-top: 1em;
                     border-radius: .3em;
                 }
 
-                .progressi {
+                .progress {
                     height: .8em;
                     border-radius: .3em;
                 }
@@ -403,7 +408,7 @@
     .contact-me {
         text-align: center;
 
-        &__elementi {
+        &__elements {
 
             flex-direction: row;
             justify-content: space-around;

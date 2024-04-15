@@ -15,15 +15,15 @@ body {
     padding: 0 1.5em;
 }
 
-.presentazione p span {
+.about p span {
     color: $secondary-color;
     font-weight: 600;
 }
 
-.lingue {
+.lenguages {
     grid-area: li;
 
-    &__elementi {
+    &__elements {
 
         padding: .5em 0;
 
@@ -36,7 +36,7 @@ body {
 .hobbies {
     grid-area: ho;
 
-    &__elementi {
+    &__elements {
         display: grid;
         grid-auto-flow: column;
         justify-content: space-between;
