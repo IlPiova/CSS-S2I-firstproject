@@ -2,11 +2,11 @@
 $bg-color: #191815;
 $text-color: #d4d4d4;
 $secondary-color: #60bf4e;
-$luminescenza: 0px 0px 5px 2px darken($secondary-color, 25);
+$shadow: 0px 0px 5px 2px darken($secondary-color, 25);
+$headers_text: "Poppins";
+$body_text: "Poppins";
 
 //caratteri
-
-// bisogna reinserire i font
 @font-face {
     font-family: "Poppins Black";
     src: url('/file multimediali/caratteri/Poppins-Black.ttf') format('ttf');
@@ -43,13 +43,15 @@ $luminescenza: 0px 0px 5px 2px darken($secondary-color, 25);
     padding: 0px;
     background-color: $bg-color;
     color: $text-color;
-    font-family: "poppins";
+    font-family: $body_text;
     font-size: calc(1vw + 6px);
     line-height: 1.5em;
     letter-spacing: .05em;
     scroll-behavior: smooth;
     box-sizing: border-box;
 }
+
+
 
 body {
     display: grid;
@@ -69,21 +71,21 @@ body {
 
 h1 {
     font-size: calc(6vw + 6px);
-    font-family: "poppins";
+    font-family: $headers_text;
     font-weight: 900;
     line-height: 1.5em;
 }
 
 h2 {
     font-size: calc(4vw + 6px);
-    font-family: "poppins";
+    font-family: $headers_text;
     font-weight: 600;
     line-height: 1em;
     margin: 1em 0;
 }
 
 strong {
-    font-family: 'poppins';
+    font-family: $body_text;
     font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 1em;
@@ -94,19 +96,19 @@ strong {
     margin: 5px 0;
 }
 
-.txt-colorato {
+.coloured-txt {
     font-size: inherit;
     font-weight: inherit;
     color: $secondary-color;
 }
 
-.icona {
+.icon {
     width: 3.65em;
     height: auto;
     border-radius: 10px;
 }
 
-.barra {
+.bar {
     width: 100%;
     margin-top: 1em;
     background-color: lighten($bg-color, 10);
@@ -114,22 +116,22 @@ strong {
 
 }
 
-.progressi {
+.progress {
     background-color: $secondary-color;
     height: 1.3em;
     border-radius: .3em;
-    box-shadow: $luminescenza;
+    box-shadow: $shadow;
 }
 
 %contact-button {
     background-color: $secondary-color;
     color: $bg-color;
-    font-family: 'poppins';
+    font-family: $body_text;
     font-weight: 600;
     padding: 0.5em;
     border: none;
     border-radius: .5em;
-    box-shadow: $luminescenza;
+    box-shadow: $shadow;
 
     a {
         text-decoration: none;

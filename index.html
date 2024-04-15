@@ -4,21 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="CRISTIAN PIOVANI | FRONT-END DEVELOPER \ PORTFOLIO">
-    <meta name="description" content="Portfolio di Cristian Piovani, creato per un progetto di Start2Impact">
-    <meta property="og:type" content="website">
-    <link rel="stylesheet" href="file sass/css/styles.css">
+
+    <!-- Preload image -->
+    <link rel="preload" as="image" href="assets/images/foto_cristian_piovani.webp" />
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Cristian Piovani" />
+    <meta name="description" content="Portfolio di Cristian Piovani, creato per un progetto di Start2Impact" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ilpiova.github.io/CSS-S2I-firstproject/" />
+    <meta property="og:title" content="Cristian Piovani" />
+    <meta property="og:description" content="Portfolio di Cristian Piovani, creato per un progetto di Start2Impact" />
+    <meta property="og:image" src="assets/images/open_graph_portfolio_image.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://ilpiova.github.io/CSS-S2I-firstproject/" />
+    <meta property="twitter:title" content="Cristian Piovani" />
+    <meta property="twitter:description"
+        content="Portfolio di Cristian Piovani, creato per un progetto di Start2Impact" />
+    <meta property="twitter:image" src="assets/images/open_graph_portfolio_image.png" />
+
+    <!-- Meta Tags Generated with https://metatags.io -->
+
+    <!-- favicon-->
+    <link rel="icon" href="assets/icons/favicon/Favicon_cristian_piovani.svg">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/sass/css/styles.css">
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+
     <title>Cristian Piovani</title>
 </head>
 
 <body>
     <header class="navbar">
-        <!-- logo -->
         <input type="checkbox" id="navbar__button" class="navbar__button">
         <label for="navbar__button" class="navbar__label">
             <svg class="navbar__label__menu" height="24" viewBox="0 -960 960 960" width="24">
@@ -32,153 +60,153 @@
             </svg> <!-- close -->
 
         </label>
-        <ul class="navbar__elementi">
-            <li class="navbar__elementi__item logo"><a href="#"><svg width="96" height="40.875" viewBox="0 0 256 109"
-                        fill="none" xmlns="http://www.w3.org/2000/svg">
+        <ul class="navbar__elements">
+            <li class="navbar__elements__item logo"><a href="index.html"><svg width="96" height="40.875"
+                        viewBox="0 0 256 109" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M17.9873 38H29.2373V97.25C29.2373 104.45 25.4873 108.2 18.2873 108.2H11.6873C4.48731 108.2 0.737305 104.45 0.737305 97.25V11.75C0.737305 4.55 4.48731 0.799999 11.6873 0.799999H18.2873C25.4873 0.799999 29.2373 4.55 29.2373 11.75V32H17.9873V10.55H11.9873V98.45H17.9873V38ZM49.4873 41.75V107H38.2373V1.99999H55.7873C62.9873 1.99999 66.7373 5.75 66.7373 12.95V27.35C66.7373 32 65.0873 35.3 61.9373 36.95C65.0873 38.6 66.7373 41.9 66.7373 46.55V107H55.4873V41.75H49.4873ZM49.4873 11.75V32H55.4873V11.75H49.4873ZM86.2373 20H75.7373V0.799999H86.2373V20ZM86.2373 107.15H75.7373V32H86.2373V107.15ZM106.47 36.5H112.77C119.97 36.5 123.72 40.25 123.72 47.45V97.25C123.72 104.45 119.97 108.2 112.77 108.2H106.17C98.9697 108.2 95.2197 104.45 95.2197 97.25V50.75H106.47V98.45H112.47V46.25H106.17C98.9697 46.25 95.2197 42.5 95.2197 35.3V11.75C95.2197 4.55 98.9697 0.799999 106.17 0.799999H112.77C119.97 0.799999 123.72 4.55 123.72 11.75V32H112.47V10.55H106.47V36.5ZM129.755 1.99999H162.305V11.75H151.655V107H140.405V11.75H129.755V1.99999ZM180.28 20H169.78V0.799999H180.28V20ZM180.28 107.15H169.78V32H180.28V107.15ZM217.763 107H206.513V41.75H200.513V107H189.263V11.75C189.263 4.55 193.013 0.799999 200.213 0.799999H206.813C214.013 0.799999 217.763 4.55 217.763 11.75V107ZM200.513 32H206.513V10.55H200.513V32ZM244.013 107V11.75H238.013V107H226.763V1.99999H244.313C251.513 1.99999 255.263 5.75 255.263 12.95V107H244.013Z"
                             fill="#D4D4D4" />
                     </svg>
 
                 </a></li> <!-- logo -->
-            <li class="navbar__elementi__item"><a href="#esperienze">Esperienze</a></li>
-            <li class="navbar__elementi__item"><a href="#skills">Skills</a></li>
-            <li class="navbar__elementi__item"><a href="aboutme.html">About</a></li>
-            <li class="navbar__elementi__item "><button class="contact-me__button"><a
+            <li class="navbar__elements__item"><a href="#history">esperenze</a></li>
+            <li class="navbar__elements__item"><a href="#skills">Skills</a></li>
+            <li class="navbar__elements__item"><a href="aboutme.html">About</a></li>
+            <li class="navbar__elements__item "><button class="contact-me__button"><a
                         href="https://www.linkedin.com/in/cristianpiovani/" target="_blank">Scrivimi su
                         LinkedIn</a></button></li>
         </ul>
     </header>
-    <div class="foto">
-        <img src="File multimediali/foto/foto_cristian_piovani.png" alt="foto Cristian Piovani">
+    <div class="photo">
+        <img src="assets/images/foto_cristian_piovani.webp" alt="foto Cristian Piovani">
     </div><!-- fine foto -->
-    <div class="presentazione">
+    <div class="about">
 
         <h1>Hi! I'm
-            <span class="txt-colorato">
+            <span class="coloured-txt">
                 Cristian Piovani
             </span>
         </h1>
 
-        <h2>Front-End Developer</h2>
+        <h2>Front-EndDate Developer</h2>
 
 
-    </div> <!-- fine presentazione -->
-    <div class="esperienze">
-        <a name="esperienze"></a>
+    </div> <!-- fine about -->
+    <div class="history">
+        <a id="history"></a>
         <h2>Esperienze</h2>
-        <div class="esperienze__elementi">
-            <div class="esperienze__elementi__item">
-                <p class="esperienze__elementi__item__mansione">Developer & Blog Editor</p>
-                <p class="esperienze__elementi__item__azienda">Paperlit</p>
-                <p class="esperienze__elementi__item__dataIn"> 14/07/2019</p>
-                <p class="esperienze__elementi__item__dataFin"> 14/07/2019</p>
+        <div class="history__elements">
+            <div class="history__elements__item">
+                <p class="history__elements__item__job">Developer & Blog Editor</p>
+                <p class="history__elements__item__company">Paperlit</p>
+                <p class="history__elements__item__startDate"> 14/07/2019</p>
+                <p class="history__elements__item__endDate"> 14/07/2019</p>
             </div>
 
-            <div class="esperienze__elementi__item">
-                <p class="esperienze__elementi__item__mansione">Social Media Manager</p>
-                <p class="esperienze__elementi__item__azienda">Mush Services</p>
-                <p class="esperienze__elementi__item__dataIn"> 01/03/2023</p>
-                <p class="esperienze__elementi__item__dataFin"> 01/06/2023</p>
+            <div class="history__elements__item">
+                <p class="history__elements__item__job">Social Media Manager</p>
+                <p class="history__elements__item__company">Mush Services</p>
+                <p class="history__elements__item__startDate"> 01/03/2023</p>
+                <p class="history__elements__item__endDate"> 01/06/2023</p>
             </div>
 
-            <div class="esperienze__elementi__item">
-                <p class="esperienze__elementi__item__mansione">Laurea Scienze della comunicazione</p>
-                <p class="esperienze__elementi__item__azienda">Università degli studio di Cagliari</span></p>
-                <p class="esperienze__elementi__item__dataIn"> 10/09/2020</p>
-                <p class="esperienze__elementi__item__dataFin"> 17/10/2023</p>
+            <div class="history__elements__item">
+                <p class="history__elements__item__job">Laurea Scienze della comunicazione</p>
+                <p class="history__elements__item__company">Università degli studio di Cagliari</p>
+                <p class="history__elements__item__startDate"> 10/09/2020</p>
+                <p class="history__elements__item__endDate"> 17/10/2023</p>
             </div>
 
-            <div class="esperienze__elementi__item">
-                <p class="esperienze__elementi__item__mansione">Diploma Perito Informatico</p>
-                <p class="esperienze__elementi__item__azienda">I.T.I.S. D.Scano</p>
-                <p class="esperienze__elementi__item__dataIn"> 10/09/2016</p>
-                <p class="esperienze__elementi__item__dataFin"> 24/06/2020</p>
+            <div class="history__elements__item">
+                <p class="history__elements__item__job">Diploma Perito Informatico</p>
+                <p class="history__elements__item__company">I.T.I.S. D.Scano</p>
+                <p class="history__elements__item__startDate"> 10/09/2016</p>
+                <p class="history__elements__item__endDate"> 24/06/2020</p>
             </div>
         </div>
-    </div> <!-- fine esperienze -->
+    </div> <!-- fine history -->
     <div class="skills">
-        <a name="skills"></a>
+        <a id="skills"></a>
         <h2>Skills</h2>
-        <div class="skills__elementi">
+        <div class="skills__elements">
 
             <!-- GIT -->
-            <div class="skills__elementi__item">
-                <img class="icona" src="File multimediali/icone/Git-Icon-1788C.png" alt="Icona Git">
-                <div class="barra">
-                    <div class="progressi" style="width: 20%;"></div>
+            <div class="skills__elements__item">
+                <img class="icon" src="assets/icons/skills/Git-Icon-1788C.png" alt="Skill 1: Git">
+                <div class="bar">
+                    <div class="progress" style="width: 20%;"></div>
                     <!--inserisco css inline perché la width cambia per ogni elemento con la classe-->
                 </div>
             </div>
 
             <!-- HTML -->
-            <div class="skills__elementi__item">
-                <img class="icona" src="File multimediali/icone/icons8-html5-100.png" alt="Icona HTML">
-                <div class="barra">
-                    <div class="progressi" style="width: 50%;"></div>
+            <div class="skills__elements__item">
+                <img class="icon" src="assets/icons/skills/icons8-html5-100.png" alt="Skill 2: HTML">
+                <div class="bar">
+                    <div class="progress" style="width: 50%;"></div>
                 </div>
             </div>
 
             <!-- CSS -->
-            <div class="skills__elementi__item">
-                <img class="icona" src="File multimediali/icone/icons8-css3-100.png" alt="Icona CSS 3">
-                <div class="barra">
-                    <div class="progressi" style="width: 30%;"></div>
+            <div class="skills__elements__item">
+                <img class="icon" src="assets/icons/skills/icons8-css3-100.png" alt="Skill 3: CSS 3">
+                <div class="bar">
+                    <div class="progress" style="width: 30%;"></div>
                 </div>
             </div>
 
             <!-- SASS -->
-            <div class="skills__elementi__item">
-                <img class="icona" src="File multimediali/icone/icons8-sass-avatar-100.png" alt="Icona SASS">
+            <div class="skills__elements__item">
+                <img class="icon" src="assets/icons/skills/icons8-sass-avatar-100.png" alt="Skill 4: SASS">
 
-                <div class="barra">
-                    <div class="progressi" style="width: 50%;"></div>
+                <div class="bar">
+                    <div class="progress" style="width: 50%;"></div>
                 </div>
             </div>
         </div>
     </div> <!-- fine skills -->
+
     <div class="tools">
-        <a name="tools"></a>
+        <a id="tools"></a>
         <h2>Tools</h2>
-        <div class="tools__elementi">
-            <div class="tools__elementi__item">
+        <div class="tools__elements">
+            <div class="tools__elements__item">
 
                 <p><strong>TickTick</strong></p>
-                <img class="icona" src="File multimediali/icone/Icona TickTick.png" alt="Icona TickTick">
-                <div class="barra">
-                    <div class="progressi" style="width: 75%;"></div>
+                <img class="icon" src="assets/icons/tools/Icona-TickTick.png" alt="Tool 1: TickTick">
+                <div class="bar">
+                    <div class="progress" style="width: 75%;"></div>
                 </div>
             </div>
 
-            <div class="tools__elementi__item">
+            <div class="tools__elements__item">
                 <p><strong>Notion</strong></p>
-                <img class="icona" src="File multimediali/icone/Icona notion.png" alt="Icona Notion">
-                <div class="barra">
-                    <div class="progressi" style="width: 55%;"></div>
+                <img class="icon" src="assets/icons/tools/icona-notion.png" alt="Tool 2: Notion">
+                <div class="bar">
+                    <div class="progress" style="width: 55%;"></div>
                 </div>
             </div>
 
-            <div class="tools__elementi__item">
+            <div class="tools__elements__item">
                 <p><strong>Asana</strong></p>
-                <img class="icona" src="File multimediali/icone/Icona-Asana.png" alt="Icona Asana">
-                <div class="barra">
-                    <div class="progressi" style="width: 35%;"></div>
+                <img class="icon" src="assets/icons/tools/icona-Asana.png" alt="Tool 3: Asana">
+                <div class="bar">
+                    <div class="progress" style="width: 35%;"></div>
                 </div>
             </div>
 
-            <div class="tools__elementi__item">
+            <div class="tools__elements__item">
                 <p><strong>Google Slides</strong></p>
-                <img class="icona" src="File multimediali/icone/Icona google slides.png" alt="Icona Google Slides">
-                <div class="barra">
-                    <div class="progressi" style="width: 75%;"></div>
+                <img class="icon" src="assets/icons/tools/icona-google slides.png" alt="Tool 4: Google Slides">
+                <div class="bar">
+                    <div class="progress" style="width: 75%;"></div>
                 </div>
             </div>
         </div>
-    </div>
     </div> <!-- fine tools    -->
     <div class="contact-me">
         <h2>Contact Me</h2>
-        <div class="contact-me__elementi">
+        <div class="contact-me__elements">
             <button class="contact-me__mail"><a href="mailto:piovani.cp@gmail.com" target="_blank">Inviami una
                     mail</a></button>
             <button class="contact-me__button"><a href="https://www.linkedin.com/in/cristianpiovani/"
@@ -189,19 +217,19 @@
     </div> <!-- fine contact me -->
 
     <footer class="footer">
-        <div class="footer__elementi">
-            <li class="footer__elementi__item logo"><a href="#"><svg width="128" height="54.5" viewBox="0 0 256 109"
-                        fill="none" xmlns="http://www.w3.org/2000/svg">
+        <ul class="footer__elements">
+            <li class="footer__elements__item logo"><a href="index.html"><svg width="128" height="54.5"
+                        viewBox="0 0 256 109" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M17.9873 38H29.2373V97.25C29.2373 104.45 25.4873 108.2 18.2873 108.2H11.6873C4.48731 108.2 0.737305 104.45 0.737305 97.25V11.75C0.737305 4.55 4.48731 0.799999 11.6873 0.799999H18.2873C25.4873 0.799999 29.2373 4.55 29.2373 11.75V32H17.9873V10.55H11.9873V98.45H17.9873V38ZM49.4873 41.75V107H38.2373V1.99999H55.7873C62.9873 1.99999 66.7373 5.75 66.7373 12.95V27.35C66.7373 32 65.0873 35.3 61.9373 36.95C65.0873 38.6 66.7373 41.9 66.7373 46.55V107H55.4873V41.75H49.4873ZM49.4873 11.75V32H55.4873V11.75H49.4873ZM86.2373 20H75.7373V0.799999H86.2373V20ZM86.2373 107.15H75.7373V32H86.2373V107.15ZM106.47 36.5H112.77C119.97 36.5 123.72 40.25 123.72 47.45V97.25C123.72 104.45 119.97 108.2 112.77 108.2H106.17C98.9697 108.2 95.2197 104.45 95.2197 97.25V50.75H106.47V98.45H112.47V46.25H106.17C98.9697 46.25 95.2197 42.5 95.2197 35.3V11.75C95.2197 4.55 98.9697 0.799999 106.17 0.799999H112.77C119.97 0.799999 123.72 4.55 123.72 11.75V32H112.47V10.55H106.47V36.5ZM129.755 1.99999H162.305V11.75H151.655V107H140.405V11.75H129.755V1.99999ZM180.28 20H169.78V0.799999H180.28V20ZM180.28 107.15H169.78V32H180.28V107.15ZM217.763 107H206.513V41.75H200.513V107H189.263V11.75C189.263 4.55 193.013 0.799999 200.213 0.799999H206.813C214.013 0.799999 217.763 4.55 217.763 11.75V107ZM200.513 32H206.513V10.55H200.513V32ZM244.013 107V11.75H238.013V107H226.763V1.99999H244.313C251.513 1.99999 255.263 5.75 255.263 12.95V107H244.013Z"
                             fill="#D4D4D4" />
                     </svg>
 
                 </a></li> <!--logo-->
-            <li class="footer__elementi__item"><a href="#esperienze">Esperienze</a></li>
-            <li class="footer__elementi__item"><a href="#skills">Skills</a></li>
-            <li class="footer__elementi__item"><a href="aboutme.html">About</a></li>
-        </div>
+            <li class="footer__elements__item"><a href="#history">history</a></li>
+            <li class="footer__elements__item"><a href="#skills">Skills</a></li>
+            <li class="footer__elements__item"><a href="aboutme.html">About</a></li>
+        </ul>
     </footer> <!--fine footer -->
 </body>
 
