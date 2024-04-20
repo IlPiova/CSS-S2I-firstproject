@@ -168,23 +168,27 @@
     <div class="contact-me">
         <h2>Contact Me</h2>
         <div class=" conteiner contact-me__elements">
-            <div class="form">
+            <form class="form">
                 <div class="row">
                     <div class="column">
                         <label for="name">Nome:</label>
-                        <input type="text" placeholder="Nome" id="name" class="form__item">
+                        <input type="text" placeholder="Nome" id="name" class="form__item" required>
                     </div>
                     <div class="column">
                         <label for="surname">Cognome:</label>
-                        <input type="text" placeholder="Cognome" id="surname" class="form__item">
+                        <input type="text" placeholder="Cognome" id="lastname" class="form__item">
                     </div>
                 </div>
-                <label for="from_mail">E-Mail:</label>
-                <input type="email" placeholder="Inserisci la tua mail" id="from_mail" class="form__item">
+                <label for="from_mail">*E-Mail:</label>
+                <input type="email" placeholder="Inserisci la tua mail" id="from_mail" class="form__item"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Inserisci un indirizzo email valido"
+                    required>
 
-                <label for="message">Scrivi il tuo messaggio:</label>
-                <textarea placeholder="Scrivi il  messaggio" id="message" class="form__item"></textarea>
-            </div>
+                <label for=" message">*Scrivi il tuo messaggio:</label>
+                <textarea placeholder="Scrivi qui il tuo messaggio (massimo 500 caratteri)" maxlength="500" id="message"
+                    rows="5" class="form__item" required></textarea>
+                <p class="info">* Campo obbligatorio</p>
+            </form>
 
             <div class="buttons">
                 <button type="submit" onclick="sendMail()" class="contact-me__mail">Inviami una
