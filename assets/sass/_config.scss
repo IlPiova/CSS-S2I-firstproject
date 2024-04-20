@@ -2,9 +2,11 @@
 $bg-color: #191815;
 $text-color: #d4d4d4;
 $secondary-color: #60bf4e;
+$error-color: #bf4e60;
 $shadow: 0px 0px 5px 2px darken($secondary-color, 25);
-$headers_text: "Poppins";
-$body_text: "Poppins";
+$error-shadow: 0px 0px 5px 2px darken(#bf4e60, 25);
+$headers_text: "Poppins", sans-serif;
+$body_text: "Poppins", sans-serif;
 
 //caratteri
 @font-face {

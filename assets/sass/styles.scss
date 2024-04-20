@@ -12,27 +12,6 @@
         display: none;
     }
 
-    // &__label {
-    //     position: absolute;
-    //     cursor: pointer;
-    //     margin: 0rem 1rem;
-    //     right: 0;
-
-    //     svg {
-    //         fill: $text-color;
-    //     }
-
-    //     &__close {
-    //         display: none;
-    //     }
-
-    //     &__menu {
-    //         margin-top: 0.2rem;
-    //     }
-    // }
-
-
-
     &__elements {
         width: 100%;
         display: flex;
@@ -112,7 +91,6 @@
 
 .about {
     grid-area: pr;
-    // background-color: antiquewhite;
 
     h2 {
         color: darken($text-color, 25);
@@ -134,7 +112,7 @@
     }
 }
 
-//fine foto
+//fine photo
 
 
 .history {
@@ -183,6 +161,8 @@
     }
 }
 
+//fine history
+
 
 
 .skills {
@@ -199,6 +179,8 @@
         }
     }
 }
+
+//fine skills
 
 .tools {
     grid-area: to;
@@ -229,6 +211,8 @@
         }
     }
 }
+
+// fine tools
 
 .contact-me {
     grid-area: cm;
@@ -269,6 +253,7 @@
             justify-content: flex-start;
             text-align: left;
             background-color: inherit;
+            gap: .5em;
 
             .column {
                 display: flex;
@@ -278,7 +263,6 @@
 
             .row {
                 background-color: inherit;
-                gap: 1.5em;
             }
 
             .info {
@@ -290,9 +274,10 @@
 
 
 
+
             &__item {
                 border-radius: 5px;
-                border-color: $secondary-color;
+                border: 1px solid $secondary-color;
                 background-color: inherit;
                 width: 100%;
                 padding: .5em;
@@ -301,10 +286,11 @@
                     min-height: 200px;
                 }
 
-                &:active {
-                    border: inherit;
+                &:focus {
+                    outline: none;
                     box-shadow: $shadow;
                 }
+
             }
         }
 
@@ -326,6 +312,8 @@
         }
     }
 }
+
+//fine contact me
 
 .footer {
     grid-area: fo;
@@ -362,6 +350,8 @@
         }
     }
 }
+
+//fine footer
 
 
 
@@ -443,6 +433,8 @@
         }
     }
 }
+
+// fine (min-width: 481px) and (max-width: 720px)
 
 
 
