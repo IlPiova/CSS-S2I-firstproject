@@ -298,18 +298,20 @@
             display: flex;
             flex-flow: column wrap;
             justify-content: space-around;
-            background-color: inherit
+            background-color: inherit;
+
+            .contact-me__mail {
+                @extend %contact-button;
+                background-color: $bg-color;
+                color: $secondary-color;
+                border: $secondary-color;
+                box-shadow: $shadow;
+                cursor: pointer;
+
+            }
         }
 
-        .contact-me__mail {
-            @extend %contact-button;
-            background-color: $bg-color;
-            color: $secondary-color;
-            border: $secondary-color;
-            box-shadow: $shadow;
-            cursor: pointer;
 
-        }
     }
 }
 
@@ -420,6 +422,7 @@
             .row {
                 display: flex;
                 flex-direction: row;
+                gap: 1em;
                 justify-content: space-between;
                 background-color: inherit;
             }
@@ -504,6 +507,7 @@
             .row {
                 display: flex;
                 flex-direction: row;
+                gap: 1em;
                 justify-content: space-between;
                 background-color: inherit;
             }

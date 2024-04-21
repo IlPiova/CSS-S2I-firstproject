@@ -237,28 +237,28 @@
                     </div>
                     <div class="column">
                         <label for="surname">Cognome:</label>
-                        <input type="text" placeholder="Cognome" id="lastname" class="form__item">
+                        <input type="text" placeholder="Cognome" id="lastname" class="form__item" required>
                     </div>
                 </div>
                 <label for="from_mail">*E-Mail:</label>
-                <input type="email" placeholder="Inserisci la tua mail" id="from_mail" class="form__item"
-                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Inserisci un indirizzo email valido"
-                    required>
+                <input type="email" placeholder="Inserisci la tua mail" id="from_mail" class="form__item" required>
 
                 <label for=" message">*Scrivi il tuo messaggio:</label>
                 <textarea placeholder="Scrivi qui il tuo messaggio (massimo 500 caratteri)" maxlength="500" id="message"
                     rows="5" class="form__item" required></textarea>
+
                 <p class="info">* Campo obbligatorio</p>
+
+
+                <div class="buttons">
+                    <button type="submit" onclick="sendMail()" class="contact-me__mail">Inviami una
+                        mail</button>
+
+                    <button class="contact-me__button"><a href="https://www.linkedin.com/in/cristianpiovani/"
+                            target="_blank">Scrivimi su
+                            LinkedIn</a></button>
+                </div>
             </form>
-
-            <div class="buttons">
-                <button type="submit" onclick="sendMail()" class="contact-me__mail">Inviami una
-                    mail</button>
-
-                <button class="contact-me__button"><a href="https://www.linkedin.com/in/cristianpiovani/"
-                        target="_blank">Scrivimi su
-                        LinkedIn</a></button>
-            </div>
         </div>
     </div> <!-- fine contact me -->
 
