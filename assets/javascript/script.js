@@ -1,4 +1,5 @@
 function sendMail() {
+<<<<<<< HEAD
     let name = document.getElementById("name").value;
     let lastname = document.getElementById("lastname").value;
     let from_mail = document.getElementById("from_mail").value;
@@ -20,5 +21,12 @@ function sendMail() {
             });
     } else {
         alert('Per favore compila tutti i campi obbligatori.');
+=======
+    let params = {
+        name: document.getElementById("name").value,
+        lastname: document.getElementById("lastname").value,
+        from_mail: document.getElementById("from_mail").value,
+        message: document.getElementById("message").value
+>>>>>>> dev
     }
 }

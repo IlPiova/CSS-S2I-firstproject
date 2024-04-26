@@ -7,33 +7,69 @@
     top: 0;
     width: 100%;
     align-items: center;
+    justify-content: space-between;
 
     &__button {
         display: none;
     }
 
     &__elements {
+        position: relative;
         width: 100%;
         display: flex;
-        flex-direction: column;
         align-items: center;
-        gap: 2rem;
-        padding: 1em;
+        justify-content: space-between;
+
+        &__links {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            padding: 1em;
+            align-items: end;
+            position: absolute;
+            right: 2em;
+            top: 5em;
+            align-self: flex-end;
+            border-radius: 10px;
+
+            &__item {
+                list-style: none;
+                text-transform: uppercase;
+                display: none;
+
+
+                & a {
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                        text-decoration-color: $secondary-color;
+                        text-decoration-thickness: 2px;
+                    }
+
+                    &:active {
+                        text-decoration: underline;
+                        text-decoration-color: $secondary-color;
+                        text-decoration-thickness: 2px;
+                    }
+                }
+
+                &__label {
+                    list-style: none;
+                }
+            }
+        }
 
         .logo {
             margin-right: auto;
             display: block;
-        }
-
-        .contact-me__button {
-            padding: .1em .3em;
+            background-color: inherit;
+            margin: 1em 0;
         }
 
         .navbar__label {
-            position: absolute;
             cursor: pointer;
-            margin: 0rem 1rem;
-            right: 0;
+            height: fit-content;
 
             svg {
                 fill: $text-color;
@@ -48,32 +84,16 @@
             }
         }
 
-        &__item {
-            list-style: none;
-            text-transform: uppercase;
-            display: none;
-
-            & a {
-                text-decoration: none;
-
-                &:hover {
-                    text-decoration: underline;
-                    text-decoration-color: $secondary-color;
-                    text-decoration-thickness: 2px;
-                }
-
-                &:active {
-                    text-decoration: underline;
-                    text-decoration-color: $secondary-color;
-                    text-decoration-thickness: 2px;
-                }
-            }
+        .label {
+            display: block;
+            top: auto;
         }
+
 
     }
 }
 
-#navbar__button:checked~.navbar__elements .navbar__elements__item {
+#navbar__button:checked~.navbar__elements .navbar__elements__links .navbar__elements__links__item {
     display: block;
 }
 
@@ -261,10 +281,13 @@
                 background-color: inherit;
             }
 
+<<<<<<< HEAD
             .row {
                 background-color: inherit;
             }
 
+=======
+>>>>>>> dev
             .info {
                 color: darken($secondary-color, 20);
                 margin-top: 1.8em;
@@ -295,6 +318,7 @@
         }
 
         .buttons {
+<<<<<<< HEAD
             display: flex;
             flex-flow: column wrap;
             justify-content: space-around;
@@ -312,6 +336,28 @@
         }
 
 
+=======
+            background-color: inherit;
+        }
+
+        .contact-me__mail {
+            @extend %contact-button;
+            background-color: $bg-color;
+            color: $secondary-color;
+            border: $secondary-color;
+            box-shadow: $shadow;
+            cursor: pointer;
+            width: 50%;
+
+            &:hover {
+                background-color: $secondary-color;
+                color: $bg-color;
+            }
+
+        }
+
+
+>>>>>>> dev
     }
 }
 
@@ -414,9 +460,8 @@
         }
     }
 
-    .contact-me {
-        text-align: center;
 
+<<<<<<< HEAD
         &__elements {
 
             .row {
@@ -435,6 +480,8 @@
             }
         }
     }
+=======
+>>>>>>> dev
 }
 
 // fine (min-width: 481px) and (max-width: 720px)
@@ -449,16 +496,22 @@
         }
 
         &__elements {
-            flex-direction: row;
-            justify-content: flex-end;
-            align-items: center;
+            &__links {
+                flex-direction: row;
+                position: static;
+                justify-content: flex-end;
+                align-items: center;
 
-            .contact-me__button {
-                margin: 0;
-            }
 
-            &__item {
-                display: block;
+
+
+                &__item {
+                    display: block;
+                }
+
+                .contact-me__button {
+                    margin: 0;
+                }
             }
         }
     }
@@ -499,6 +552,7 @@
         }
     }
 
+<<<<<<< HEAD
     .contact-me {
         text-align: center;
 
@@ -521,4 +575,6 @@
         }
     }
 
+=======
+>>>>>>> dev
 }
