@@ -281,13 +281,6 @@
                 background-color: inherit;
             }
 
-<<<<<<< HEAD
-            .row {
-                background-color: inherit;
-            }
-
-=======
->>>>>>> dev
             .info {
                 color: darken($secondary-color, 20);
                 margin-top: 1.8em;
@@ -318,25 +311,6 @@
         }
 
         .buttons {
-<<<<<<< HEAD
-            display: flex;
-            flex-flow: column wrap;
-            justify-content: space-around;
-            background-color: inherit;
-
-            .contact-me__mail {
-                @extend %contact-button;
-                background-color: $bg-color;
-                color: $secondary-color;
-                border: $secondary-color;
-                box-shadow: $shadow;
-                cursor: pointer;
-
-            }
-        }
-
-
-=======
             background-color: inherit;
         }
 
@@ -357,7 +331,6 @@
         }
 
 
->>>>>>> dev
     }
 }
 
@@ -461,27 +434,6 @@
     }
 
 
-<<<<<<< HEAD
-        &__elements {
-
-            .row {
-                display: flex;
-                flex-direction: row;
-                gap: 1em;
-                justify-content: space-between;
-                background-color: inherit;
-            }
-
-            .buttons {
-                display: flex;
-                flex-flow: row wrap;
-                justify-content: space-around;
-
-            }
-        }
-    }
-=======
->>>>>>> dev
 }
 
 // fine (min-width: 481px) and (max-width: 720px)
@@ -552,29 +504,4 @@
         }
     }
 
-<<<<<<< HEAD
-    .contact-me {
-        text-align: center;
-
-        &__elements {
-
-            .row {
-                display: flex;
-                flex-direction: row;
-                gap: 1em;
-                justify-content: space-between;
-                background-color: inherit;
-            }
-
-            .buttons {
-                display: flex;
-                flex-flow: row wrap;
-                justify-content: space-around;
-                background-color: inherit;
-            }
-        }
-    }
-
-=======
->>>>>>> dev
 }
