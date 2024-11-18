@@ -1,3 +1,5 @@
+
+
 function sendMail() {
     let params = {
         name: document.getElementById("name").value,
@@ -7,8 +9,11 @@ function sendMail() {
     }
     emailjs.send("service_t7921jo", "template_3bj8hr8", params)
         .then((response) => {
-            alert('SUCCESS!', response.status, response.text);
+            alert('Mail inviata con successo', response.status, response.text);
         }, (err) => {
-            alert('FAILED...', err);
+            alert('C\'è stato un errore, controlla che i campi siano tutti corretti', err);
         });
+
 }
+
+

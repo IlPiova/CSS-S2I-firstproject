@@ -141,7 +141,7 @@
 
     &__elements {
         display: grid;
-        grid-auto-flow: rows;
+        // grid-auto-flow: rows;
         gap: 3em;
 
 
@@ -234,7 +234,7 @@
     margin: 5em;
     text-align: center;
 
-    .conteiner {
+    .container {
         padding: 1.5em;
         background-color: lighten($bg-color, 5);
         border-radius: 10px;
@@ -269,6 +269,10 @@
             text-align: left;
             background-color: inherit;
 
+            input {
+                outline: none;
+            }
+
             .column {
                 display: flex;
                 flex-direction: column;
@@ -295,10 +299,11 @@
                     min-height: 200px;
                 }
 
-                &:active {
-                    border: inherit;
-                    box-shadow: $shadow;
-                }
+                // &:active {
+                //     box-shadow: $shadow;
+                //     outline: none;
+                // }
+
             }
         }
 

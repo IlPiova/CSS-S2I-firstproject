@@ -30,9 +30,9 @@
     <!-- Meta Tags Generated with https://metatags.io -->
 
     <!-- EmailJS -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
-    <script type="text/javascript">
+    <script>
         (function () {
             emailjs.init({
                 publicKey: "qm03SpDqPiUA4av9l",
@@ -40,8 +40,7 @@
         })();
     </script>
 
-    <!-- JavaScript -->
-    <script src="assets/javascript/script.js"></script>
+
 
 
     <!-- favicon-->
@@ -230,7 +229,7 @@
 
     <div class="contact-me">
         <h2>Contact Me</h2>
-        <div class=" conteiner contact-me__elements">
+        <div class=" container contact-me__elements">
             <div class="form">
                 <div class="column">
                     <label for="name">* Nome:</label>
@@ -250,7 +249,7 @@
             </div>
 
             <div class="buttons">
-                <button type="submit" onclick="sendMail()" class="contact-me__mail">Inviami una
+                <button type="submit" onclick="sendMail()" class="contact-me__mail" id="formBtn">Inviami una
                     mail</button>
             </div>
         </div>
@@ -271,6 +270,11 @@
             <li class="footer__elements__item"><a href="aboutme.html">About</a></li>
         </ul>
     </footer> <!--fine footer -->
+
+
+
+    <!-- JavaScript -->
+    <script src="assets/javascript/script.js"></script>
 </body>
 
 </html>
