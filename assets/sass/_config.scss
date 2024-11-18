@@ -94,7 +94,7 @@ strong {
 
 }
 
-.conteiner {
+.container {
     margin: 5px 0;
 }
 
@@ -135,6 +135,8 @@ strong {
     border: none;
     border-radius: .5em;
     box-shadow: $shadow;
+    outline: none;
+
 
     a {
         text-decoration: none;

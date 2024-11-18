@@ -30,9 +30,9 @@
     <!-- Meta Tags Generated with https://metatags.io -->
 
     <!-- EmailJS -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
-    <script type="text/javascript">
+    <script>
         (function () {
             emailjs.init({
                 publicKey: "qm03SpDqPiUA4av9l",
@@ -40,8 +40,7 @@
         })();
     </script>
 
-    <!-- JavaScript -->
-    <script src="assets/javascript/script.js"></script>
+
 
 
     <!-- favicon-->
@@ -230,8 +229,8 @@
 
     <div class="contact-me">
         <h2>Contact Me</h2>
-        <div class=" conteiner contact-me__elements">
-            <form class="form">
+        <div class=" container contact-me__elements">
+            <div class="form">
                 <div class="column">
                     <label for="name">* Nome:</label>
                     <input type="text" placeholder="Nome" id="name" class="form__item">
@@ -249,31 +248,33 @@
                 <p class="info">* Campo obbligatorio</p>
 
                 <div class="buttons">
-                    <button type="submit" onclick="sendMail()" class="contact-me__mail">Inviami una
+                    <button type="submit" onclick="sendMail()" class="contact-me__mail" id="formBtn">Inviami una
                         mail</button>
                 </div>
-            </form>
+            </div>
+        </div> <!-- fine contact me -->
+
+        <footer class="footer">
+            <ul class="footer__elements">
+                <li class="footer__elements__item logo"><a href="index.html"><svg width="128" height="54.5"
+                            viewBox="0 0 256 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17.9873 38H29.2373V97.25C29.2373 104.45 25.4873 108.2 18.2873 108.2H11.6873C4.48731 108.2 0.737305 104.45 0.737305 97.25V11.75C0.737305 4.55 4.48731 0.799999 11.6873 0.799999H18.2873C25.4873 0.799999 29.2373 4.55 29.2373 11.75V32H17.9873V10.55H11.9873V98.45H17.9873V38ZM49.4873 41.75V107H38.2373V1.99999H55.7873C62.9873 1.99999 66.7373 5.75 66.7373 12.95V27.35C66.7373 32 65.0873 35.3 61.9373 36.95C65.0873 38.6 66.7373 41.9 66.7373 46.55V107H55.4873V41.75H49.4873ZM49.4873 11.75V32H55.4873V11.75H49.4873ZM86.2373 20H75.7373V0.799999H86.2373V20ZM86.2373 107.15H75.7373V32H86.2373V107.15ZM106.47 36.5H112.77C119.97 36.5 123.72 40.25 123.72 47.45V97.25C123.72 104.45 119.97 108.2 112.77 108.2H106.17C98.9697 108.2 95.2197 104.45 95.2197 97.25V50.75H106.47V98.45H112.47V46.25H106.17C98.9697 46.25 95.2197 42.5 95.2197 35.3V11.75C95.2197 4.55 98.9697 0.799999 106.17 0.799999H112.77C119.97 0.799999 123.72 4.55 123.72 11.75V32H112.47V10.55H106.47V36.5ZM129.755 1.99999H162.305V11.75H151.655V107H140.405V11.75H129.755V1.99999ZM180.28 20H169.78V0.799999H180.28V20ZM180.28 107.15H169.78V32H180.28V107.15ZM217.763 107H206.513V41.75H200.513V107H189.263V11.75C189.263 4.55 193.013 0.799999 200.213 0.799999H206.813C214.013 0.799999 217.763 4.55 217.763 11.75V107ZM200.513 32H206.513V10.55H200.513V32ZM244.013 107V11.75H238.013V107H226.763V1.99999H244.313C251.513 1.99999 255.263 5.75 255.263 12.95V107H244.013Z"
+                                fill="#D4D4D4" />
+                        </svg>
+
+                    </a></li> <!--logo-->
+                <li class="footer__elements__item"><a href="#history">history</a></li>
+                <li class="footer__elements__item"><a href="#skills">Skills</a></li>
+                <li class="footer__elements__item"><a href="aboutme.html">About</a></li>
+
+            </ul> <!-- fine elements footer-->
+        </footer> <!--fine footer -->
 
 
-        </div>
-    </div> <!-- fine contact me -->
 
-    <footer class="footer">
-        <ul class="footer__elements">
-            <li class="footer__elements__item logo"><a href="index.html"><svg width="128" height="54.5"
-                        viewBox="0 0 256 109" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M17.9873 38H29.2373V97.25C29.2373 104.45 25.4873 108.2 18.2873 108.2H11.6873C4.48731 108.2 0.737305 104.45 0.737305 97.25V11.75C0.737305 4.55 4.48731 0.799999 11.6873 0.799999H18.2873C25.4873 0.799999 29.2373 4.55 29.2373 11.75V32H17.9873V10.55H11.9873V98.45H17.9873V38ZM49.4873 41.75V107H38.2373V1.99999H55.7873C62.9873 1.99999 66.7373 5.75 66.7373 12.95V27.35C66.7373 32 65.0873 35.3 61.9373 36.95C65.0873 38.6 66.7373 41.9 66.7373 46.55V107H55.4873V41.75H49.4873ZM49.4873 11.75V32H55.4873V11.75H49.4873ZM86.2373 20H75.7373V0.799999H86.2373V20ZM86.2373 107.15H75.7373V32H86.2373V107.15ZM106.47 36.5H112.77C119.97 36.5 123.72 40.25 123.72 47.45V97.25C123.72 104.45 119.97 108.2 112.77 108.2H106.17C98.9697 108.2 95.2197 104.45 95.2197 97.25V50.75H106.47V98.45H112.47V46.25H106.17C98.9697 46.25 95.2197 42.5 95.2197 35.3V11.75C95.2197 4.55 98.9697 0.799999 106.17 0.799999H112.77C119.97 0.799999 123.72 4.55 123.72 11.75V32H112.47V10.55H106.47V36.5ZM129.755 1.99999H162.305V11.75H151.655V107H140.405V11.75H129.755V1.99999ZM180.28 20H169.78V0.799999H180.28V20ZM180.28 107.15H169.78V32H180.28V107.15ZM217.763 107H206.513V41.75H200.513V107H189.263V11.75C189.263 4.55 193.013 0.799999 200.213 0.799999H206.813C214.013 0.799999 217.763 4.55 217.763 11.75V107ZM200.513 32H206.513V10.55H200.513V32ZM244.013 107V11.75H238.013V107H226.763V1.99999H244.313C251.513 1.99999 255.263 5.75 255.263 12.95V107H244.013Z"
-                            fill="#D4D4D4" />
-                    </svg>
-
-                </a></li> <!--logo-->
-            <li class="footer__elements__item"><a href="#history">history</a></li>
-            <li class="footer__elements__item"><a href="#skills">Skills</a></li>
-            <li class="footer__elements__item"><a href="aboutme.html">About</a></li>
-
-        </ul> <!-- fine elements footer-->
-    </footer> <!--fine footer -->
+        <!-- JavaScript -->
+        <script src="assets/javascript/script.js"></script>
 </body>
 
 </html>
