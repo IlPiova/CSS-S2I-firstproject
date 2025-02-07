@@ -1,212 +1,307 @@
 <!DOCTYPE html>
 <html lang="it">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Preload image -->
-    <link rel="preload" as="image" href="assets/images/foto_cristian_piovani.webp">
+    <link
+      rel="preload"
+      as="image"
+      href="assets/images/foto_cristian_piovani.webp"
+    />
 
     <!-- Primary Meta Tags -->
-    <meta name="title" content="Cristian Piovani">
-    <meta name="description" content="Portfolio di Cristian Piovani, creato per un progetto di Start2Impact">
+    <meta name="title" content="Cristian Piovani" />
+    <meta
+      name="description"
+      content="Portfolio di Cristian Piovani, creato per un progetto di Start2Impact"
+    />
 
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ilpiova.github.io/CSS-S2I-firstproject/">
-    <meta property="og:title" content="Cristian Piovani">
-    <meta property="og:description" content="Portfolio di Cristian Piovani, creato per un progetto di Start2Impact">
-    <meta property="og:image" content="assets/images/open_graph_about_image.png">
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://ilpiova.github.io/CSS-S2I-firstproject/"
+    />
+    <meta property="og:title" content="Cristian Piovani" />
+    <meta
+      property="og:description"
+      content="Portfolio di Cristian Piovani, creato per un progetto di Start2Impact"
+    />
+    <meta
+      property="og:image"
+      content="assets/images/open_graph_about_image.png"
+    />
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://ilpiova.github.io/CSS-S2I-firstproject/">
-    <meta property="twitter:title" content="Cristian Piovani">
-    <meta property="twitter:description"
-        content="Portfolio di Cristian Piovani, creato per un progetto di Start2Impact">
-    <meta property="twitter:image" content="assets/images/open_graph_about_image.png">
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://ilpiova.github.io/CSS-S2I-firstproject/"
+    />
+    <meta property="twitter:title" content="Cristian Piovani" />
+    <meta
+      property="twitter:description"
+      content="Portfolio di Cristian Piovani, creato per un progetto di Start2Impact"
+    />
+    <meta
+      property="twitter:image"
+      content="assets/images/open_graph_about_image.png"
+    />
 
     <!-- EmailJS -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
     <script type="text/javascript">
-        (function () {
-            emailjs.init({
-                publicKey: "qm03SpDqPiUA4av9l",
-            });
-        })();
+      (function () {
+        emailjs.init({
+          publicKey: "qm03SpDqPiUA4av9l",
+        });
+      })();
     </script>
 
     <!-- JavaScript -->
     <script src="assets/javascript/script.js"></script>
 
     <!-- Favicon -->
-    <link rel="icon" href="assets/icons/favicon/Favicon_cristian_piovani.svg">
+    <link rel="icon" href="assets/icons/favicon/Favicon_cristian_piovani.svg" />
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="assets/sass/css/styles.css">
-    <link rel="stylesheet" href="assets/sass/css/personale.css">
+    <link rel="stylesheet" href="assets/sass/css/styles.css" />
+    <link rel="stylesheet" href="assets/sass/css/personale.css" />
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Cristian Piovani</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="navbar">
-        <input type="checkbox" id="navbar__button" class="navbar__button">
-        <div class="navbar__elements">
-
-            <div class="navbar__elements__item logo"><a href="index.html"><svg width="96" height="40.875"
-                        viewBox="0 0 256 109" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M17.9873 38H29.2373V97.25C29.2373 104.45 25.4873 108.2 18.2873 108.2H11.6873C4.48731 108.2 0.737305 104.45 0.737305 97.25V11.75C0.737305 4.55 4.48731 0.799999 11.6873 0.799999H18.2873C25.4873 0.799999 29.2373 4.55 29.2373 11.75V32H17.9873V10.55H11.9873V98.45H17.9873V38ZM49.4873 41.75V107H38.2373V1.99999H55.7873C62.9873 1.99999 66.7373 5.75 66.7373 12.95V27.35C66.7373 32 65.0873 35.3 61.9373 36.95C65.0873 38.6 66.7373 41.9 66.7373 46.55V107H55.4873V41.75H49.4873ZM49.4873 11.75V32H55.4873V11.75H49.4873ZM86.2373 20H75.7373V0.799999H86.2373V20ZM86.2373 107.15H75.7373V32H86.2373V107.15ZM106.47 36.5H112.77C119.97 36.5 123.72 40.25 123.72 47.45V97.25C123.72 104.45 119.97 108.2 112.77 108.2H106.17C98.9697 108.2 95.2197 104.45 95.2197 97.25V50.75H106.47V98.45H112.47V46.25H106.17C98.9697 46.25 95.2197 42.5 95.2197 35.3V11.75C95.2197 4.55 98.9697 0.799999 106.17 0.799999H112.77C119.97 0.799999 123.72 4.55 123.72 11.75V32H112.47V10.55H106.47V36.5ZM129.755 1.99999H162.305V11.75H151.655V107H140.405V11.75H129.755V1.99999ZM180.28 20H169.78V0.799999H180.28V20ZM180.28 107.15H169.78V32H180.28V107.15ZM217.763 107H206.513V41.75H200.513V107H189.263V11.75C189.263 4.55 193.013 0.799999 200.213 0.799999H206.813C214.013 0.799999 217.763 4.55 217.763 11.75V107ZM200.513 32H206.513V10.55H200.513V32ZM244.013 107V11.75H238.013V107H226.763V1.99999H244.313C251.513 1.99999 255.263 5.75 255.263 12.95V107H244.013Z"
-                            fill="#D4D4D4" />
-                    </svg>
-
-                </a></div> <!-- logo -->
-
-            <ul class="navbar__elements__links">
-                <!-- menu navbar -->
-                <li class="footer__elements__item"><a href="index.html">Home</a></li>
-                <li class="footer__elements__item"><a href="#hobbies">Hobbies</a></li>
-                <li class="navbar__elements__links__item "><a href="https://www.linkedin.com/in/cristianpiovani/"
-                        target="_blank" class="contact-me__button">Scrivimi su
-                        LinkedIn</a></li>
-            </ul>
-            <!-- label navbar -->
-            <label for="navbar__button" class="navbar__label">
-                <svg class="navbar__label__menu" height="24" viewBox="0 -960 960 960" width="24">
-                    <path
-                        d="M100.782-212.303v-106.001h758.436v106.001H100.782Zm0-214.696v-106.002h758.436v106.002H100.782Zm0-214.697v-106.001h758.436v106.001H100.782Z" />
-                </svg><!-- menu -->
-
-                <svg class="navbar__label__close" height="24" viewBox="0 -960 960 960" width="24">
-                    <path
-                        d="M256-181.912 181.912-256l224-224-224-224L256-778.088l224 224 224-224L778.088-704l-224 224 224 224L704-181.912l-224-224-224 224Z" />
-                </svg> <!-- close -->
-
-            </label>
+      <input type="checkbox" id="navbar__button" class="navbar__button" />
+      <div class="navbar__elements">
+        <div class="navbar__elements__item logo">
+          <a href="index.html"
+            ><svg
+              width="96"
+              height="40.875"
+              viewBox="0 0 256 109"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17.9873 38H29.2373V97.25C29.2373 104.45 25.4873 108.2 18.2873 108.2H11.6873C4.48731 108.2 0.737305 104.45 0.737305 97.25V11.75C0.737305 4.55 4.48731 0.799999 11.6873 0.799999H18.2873C25.4873 0.799999 29.2373 4.55 29.2373 11.75V32H17.9873V10.55H11.9873V98.45H17.9873V38ZM49.4873 41.75V107H38.2373V1.99999H55.7873C62.9873 1.99999 66.7373 5.75 66.7373 12.95V27.35C66.7373 32 65.0873 35.3 61.9373 36.95C65.0873 38.6 66.7373 41.9 66.7373 46.55V107H55.4873V41.75H49.4873ZM49.4873 11.75V32H55.4873V11.75H49.4873ZM86.2373 20H75.7373V0.799999H86.2373V20ZM86.2373 107.15H75.7373V32H86.2373V107.15ZM106.47 36.5H112.77C119.97 36.5 123.72 40.25 123.72 47.45V97.25C123.72 104.45 119.97 108.2 112.77 108.2H106.17C98.9697 108.2 95.2197 104.45 95.2197 97.25V50.75H106.47V98.45H112.47V46.25H106.17C98.9697 46.25 95.2197 42.5 95.2197 35.3V11.75C95.2197 4.55 98.9697 0.799999 106.17 0.799999H112.77C119.97 0.799999 123.72 4.55 123.72 11.75V32H112.47V10.55H106.47V36.5ZM129.755 1.99999H162.305V11.75H151.655V107H140.405V11.75H129.755V1.99999ZM180.28 20H169.78V0.799999H180.28V20ZM180.28 107.15H169.78V32H180.28V107.15ZM217.763 107H206.513V41.75H200.513V107H189.263V11.75C189.263 4.55 193.013 0.799999 200.213 0.799999H206.813C214.013 0.799999 217.763 4.55 217.763 11.75V107ZM200.513 32H206.513V10.55H200.513V32ZM244.013 107V11.75H238.013V107H226.763V1.99999H244.313C251.513 1.99999 255.263 5.75 255.263 12.95V107H244.013Z"
+                fill="#D4D4D4"
+              />
+            </svg>
+          </a>
         </div>
+        <!-- logo -->
+
+        <ul class="navbar__elements__links">
+          <!-- menu navbar -->
+          <li class="footer__elements__item"><a href="index.html">Home</a></li>
+          <li class="footer__elements__item"><a href="#hobbies">Hobbies</a></li>
+          <li class="navbar__elements__links__item">
+            <a
+              href="https://www.linkedin.com/in/cristianpiovani/"
+              target="_blank"
+              class="contact-me__button"
+              >Scrivimi su LinkedIn</a
+            >
+          </li>
+        </ul>
+        <!-- label navbar -->
+        <label for="navbar__button" class="navbar__label">
+          <svg
+            class="navbar__label__menu"
+            height="24"
+            viewBox="0 -960 960 960"
+            width="24"
+          >
+            <path
+              d="M100.782-212.303v-106.001h758.436v106.001H100.782Zm0-214.696v-106.002h758.436v106.002H100.782Zm0-214.697v-106.001h758.436v106.001H100.782Z"
+            /></svg
+          ><!-- menu -->
+
+          <svg
+            class="navbar__label__close"
+            height="24"
+            viewBox="0 -960 960 960"
+            width="24"
+          >
+            <path
+              d="M256-181.912 181.912-256l224-224-224-224L256-778.088l224 224 224-224L778.088-704l-224 224 224 224L704-181.912l-224-224-224 224Z"
+            />
+          </svg>
+          <!-- close -->
+        </label>
+      </div>
     </header>
 
     <div class="photo">
-        <img src="assets/images/foto_cristian_piovani.webp" alt="foto Cristian Piovani">
-    </div><!-- fine foto -->
+      <img
+        src="assets/images/foto_cristian_piovani.webp"
+        alt="foto Cristian Piovani"
+      />
+    </div>
+    <!-- fine foto -->
     <div class="about">
-
-        <h1>Hello world!
-        </h1>
-        <p>Sono Cristian, 24 anni, studente front-end development. Estremamente
-            <span>curioso e sempre in cerca di stimoli</span>
-            , sono pronto a
-            <span>imparare nuovi concetti</span>
-            e a migliorare le mie capacità. Mi piace creare
-            <span>siti web semplici e di impatto</span>
-            , accessibili a più persone possibili.
-        </p>
-
-
-    </div> <!-- fine about -->
-
+      <h1>Hello world!</h1>
+      <p>
+        Classe 2000, sto affrontando il master in Front-End Development grazie a
+        Start2Impact. Estremamente
+        <span>curioso e sempre in cerca di stimoli</span>
+        , sono pronto a
+        <span>imparare nuovi concetti</span>
+        e a migliorare le mie capacità. Al momento sono alla ricerca di uno
+        <span>stage</span> in questo ruolo con l'obiettivo di
+        <span>migliorare le mie competenze</span> e nel frattempo continuare a
+        studiare.
+      </p>
+    </div>
+    <!-- fine about -->
 
     <div class="lenguages">
-        <h2>Lingue</h2>
-        <div class="lenguages__elements">
-            <div class="lenguages__elements__item">
-                <p><strong>Italiano</strong></p>
-                <p>madre lingua</p>
-                <div class="bar">
-                    <div class="progress" style="width: 100%;"></div>
-                </div>
-            </div>
-            <div class="lenguages__elements__item">
-                <p><strong>Inglese</strong></p>
-                <p>principiante</p>
-
-                <div class="bar">
-                    <div class="progress" style="width: 40%;"></div>
-                </div>
-            </div>
+      <h2>Lingue</h2>
+      <div class="lenguages__elements">
+        <div class="lenguages__elements__item">
+          <p><strong>Italiano</strong></p>
+          <p>madre lingua</p>
+          <div class="bar">
+            <div class="progress" style="width: 100%"></div>
+          </div>
         </div>
-    </div> <!-- fine lengages -->
+        <div class="lenguages__elements__item">
+          <p><strong>Inglese</strong></p>
+          <p>principiante</p>
+
+          <div class="bar">
+            <div class="progress" style="width: 40%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- fine lengages -->
 
     <div class="hobbies">
-        <a id="hobbies"></a>
-        <h2>Hobbies</h2>
+      <a id="hobbies"></a>
+      <h2>Hobbies</h2>
 
+      <div class="hobbies__elements">
+        <div class="hobbies__elements__item">
+          <p><strong>Lettura</strong></p>
 
-        <div class="hobbies__elements">
-
-            <div class="hobbies__elements__item">
-                <p><strong>Lettura</strong></p>
-
-                <img class="icon" src="assets/icons/hobbies/icons8-reading-100.png" alt="Hobbie 1: leggere">
-
-            </div>
-            <div class="hobbies__elements__item">
-                <p><strong>Film</strong></p>
-
-                <img class="icon" src="assets/icons/hobbies/icons8-video-100.png" alt="Hobbie 2: guardare film">
-
-            </div>
-            <div class="hobbies__elements__item">
-                <p><strong>Tools</strong></p>
-
-                <img class="icon" src="assets/icons/hobbies/icons8-mobile-testing-100.png"
-                    alt="Hobbie 3: testare software">
-
-            </div>
+          <img
+            class="icon"
+            src="assets/icons/hobbies/icons8-reading-100.png"
+            alt="Hobbie 1: leggere"
+          />
         </div>
-    </div> <!-- fine hobbies -->
+        <div class="hobbies__elements__item">
+          <p><strong>Film</strong></p>
+
+          <img
+            class="icon"
+            src="assets/icons/hobbies/icons8-video-100.png"
+            alt="Hobbie 2: guardare film"
+          />
+        </div>
+        <div class="hobbies__elements__item">
+          <p><strong>Tools</strong></p>
+
+          <img
+            class="icon"
+            src="assets/icons/hobbies/icons8-mobile-testing-100.png"
+            alt="Hobbie 3: testare software"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- fine hobbies -->
 
     <div class="contact-me">
-        <h2>Contact Me</h2>
-        <div class=" conteiner contact-me__elements">
-            <div class="form">
-                <div class="column">
-                    <label for="name">* Nome:</label>
-                    <input type="text" placeholder="Nome" id="name" class="form__item">
-                </div>
-                <div class="column">
-                    <label for="lastname">* Cognome:</label>
-                    <input type="text" placeholder="Cognome" id="lastname" class="form__item">
-                </div>
-                <label for="from_mail">* E-Mail:</label>
-                <input type="email" placeholder="Inserisci la tua mail" id="from_mail" class="form__item" required>
+      <h2>Contact Me</h2>
+      <div class="conteiner contact-me__elements">
+        <div class="form">
+          <div class="column">
+            <label for="name">* Nome:</label>
+            <input
+              type="text"
+              placeholder="Nome"
+              id="name"
+              class="form__item"
+            />
+          </div>
+          <div class="column">
+            <label for="lastname">* Cognome:</label>
+            <input
+              type="text"
+              placeholder="Cognome"
+              id="lastname"
+              class="form__item"
+            />
+          </div>
+          <label for="from_mail">* E-Mail:</label>
+          <input
+            type="email"
+            placeholder="Inserisci la tua mail"
+            id="from_mail"
+            class="form__item"
+            required
+          />
 
-                <label for="message">* Scrivi il tuo messaggio:</label>
-                <textarea placeholder="Scrivi il  messaggio" id="message" rows="3" class="form__item"
-                    required></textarea>
-                <p class="info">* Campo obbligatorio</p>
-            </div>
-
-            <div class="buttons">
-                <button type="submit" onclick="sendMail()" class="contact-me__mail">Inviami una
-                    mail</button>
-            </div>
+          <label for="message">* Scrivi il tuo messaggio:</label>
+          <textarea
+            placeholder="Scrivi il  messaggio"
+            id="message"
+            rows="3"
+            class="form__item"
+            required
+          ></textarea>
+          <p class="info">* Campo obbligatorio</p>
         </div>
-    </div> <!-- fine contact me -->
+
+        <div class="buttons">
+          <button type="submit" onclick="sendMail()" class="contact-me__mail">
+            Inviami una mail
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- fine contact me -->
 
     <footer class="footer">
-        <ul class="footer__elements">
-            <li class="footer__elements__item logo"><a href="index.html"><svg width="128" height="54.5"
-                        viewBox="0 0 256 109" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M17.9873 38H29.2373V97.25C29.2373 104.45 25.4873 108.2 18.2873 108.2H11.6873C4.48731 108.2 0.737305 104.45 0.737305 97.25V11.75C0.737305 4.55 4.48731 0.799999 11.6873 0.799999H18.2873C25.4873 0.799999 29.2373 4.55 29.2373 11.75V32H17.9873V10.55H11.9873V98.45H17.9873V38ZM49.4873 41.75V107H38.2373V1.99999H55.7873C62.9873 1.99999 66.7373 5.75 66.7373 12.95V27.35C66.7373 32 65.0873 35.3 61.9373 36.95C65.0873 38.6 66.7373 41.9 66.7373 46.55V107H55.4873V41.75H49.4873ZM49.4873 11.75V32H55.4873V11.75H49.4873ZM86.2373 20H75.7373V0.799999H86.2373V20ZM86.2373 107.15H75.7373V32H86.2373V107.15ZM106.47 36.5H112.77C119.97 36.5 123.72 40.25 123.72 47.45V97.25C123.72 104.45 119.97 108.2 112.77 108.2H106.17C98.9697 108.2 95.2197 104.45 95.2197 97.25V50.75H106.47V98.45H112.47V46.25H106.17C98.9697 46.25 95.2197 42.5 95.2197 35.3V11.75C95.2197 4.55 98.9697 0.799999 106.17 0.799999H112.77C119.97 0.799999 123.72 4.55 123.72 11.75V32H112.47V10.55H106.47V36.5ZM129.755 1.99999H162.305V11.75H151.655V107H140.405V11.75H129.755V1.99999ZM180.28 20H169.78V0.799999H180.28V20ZM180.28 107.15H169.78V32H180.28V107.15ZM217.763 107H206.513V41.75H200.513V107H189.263V11.75C189.263 4.55 193.013 0.799999 200.213 0.799999H206.813C214.013 0.799999 217.763 4.55 217.763 11.75V107ZM200.513 32H206.513V10.55H200.513V32ZM244.013 107V11.75H238.013V107H226.763V1.99999H244.313C251.513 1.99999 255.263 5.75 255.263 12.95V107H244.013Z"
-                            fill="#D4D4D4" />
-                    </svg>
-
-                </a></li> <!--logo-->
-            <li class="footer__elements__item"><a href="index.html">Home</a></li>
-            <li class="footer__elements__item"><a href="#hobbies">Hobbies</a></li>
-        </ul> <!-- fine elements footer-->
-    </footer> <!--fine footer -->
-</body>
-
+      <ul class="footer__elements">
+        <li class="footer__elements__item logo">
+          <a href="index.html"
+            ><svg
+              width="128"
+              height="54.5"
+              viewBox="0 0 256 109"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17.9873 38H29.2373V97.25C29.2373 104.45 25.4873 108.2 18.2873 108.2H11.6873C4.48731 108.2 0.737305 104.45 0.737305 97.25V11.75C0.737305 4.55 4.48731 0.799999 11.6873 0.799999H18.2873C25.4873 0.799999 29.2373 4.55 29.2373 11.75V32H17.9873V10.55H11.9873V98.45H17.9873V38ZM49.4873 41.75V107H38.2373V1.99999H55.7873C62.9873 1.99999 66.7373 5.75 66.7373 12.95V27.35C66.7373 32 65.0873 35.3 61.9373 36.95C65.0873 38.6 66.7373 41.9 66.7373 46.55V107H55.4873V41.75H49.4873ZM49.4873 11.75V32H55.4873V11.75H49.4873ZM86.2373 20H75.7373V0.799999H86.2373V20ZM86.2373 107.15H75.7373V32H86.2373V107.15ZM106.47 36.5H112.77C119.97 36.5 123.72 40.25 123.72 47.45V97.25C123.72 104.45 119.97 108.2 112.77 108.2H106.17C98.9697 108.2 95.2197 104.45 95.2197 97.25V50.75H106.47V98.45H112.47V46.25H106.17C98.9697 46.25 95.2197 42.5 95.2197 35.3V11.75C95.2197 4.55 98.9697 0.799999 106.17 0.799999H112.77C119.97 0.799999 123.72 4.55 123.72 11.75V32H112.47V10.55H106.47V36.5ZM129.755 1.99999H162.305V11.75H151.655V107H140.405V11.75H129.755V1.99999ZM180.28 20H169.78V0.799999H180.28V20ZM180.28 107.15H169.78V32H180.28V107.15ZM217.763 107H206.513V41.75H200.513V107H189.263V11.75C189.263 4.55 193.013 0.799999 200.213 0.799999H206.813C214.013 0.799999 217.763 4.55 217.763 11.75V107ZM200.513 32H206.513V10.55H200.513V32ZM244.013 107V11.75H238.013V107H226.763V1.99999H244.313C251.513 1.99999 255.263 5.75 255.263 12.95V107H244.013Z"
+                fill="#D4D4D4"
+              />
+            </svg>
+          </a>
+        </li>
+        <!--logo-->
+        <li class="footer__elements__item"><a href="index.html">Home</a></li>
+        <li class="footer__elements__item"><a href="#hobbies">Hobbies</a></li>
+      </ul>
+      <!-- fine elements footer-->
+    </footer>
+    <!--fine footer -->
+  </body>
 </html>
